@@ -22,8 +22,8 @@ def tap(x, y):
     if not inside(ball):
         ball.x = -199
         ball.y = -199
-        speed.x = (x + 200) / 25
-        speed.y = (y + 200) / 25
+        speed.x = (x + 200) / 20
+        speed.y = (y + 200) / 20
 
 def inside(xy):
     "Return True if xy within screen."
@@ -53,7 +53,7 @@ def move():
 
     # Move the existing targets
     for target in targets:
-        target.x -= 0.5
+        target.x -= 1
 
     # Move the cannon shot
     if inside(ball):

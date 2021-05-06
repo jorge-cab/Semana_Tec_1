@@ -22,6 +22,7 @@ def tap(x, y):
     if not inside(ball):
         ball.x = -199
         ball.y = -199
+        #Here you can modify the speed of the proyectile
         speed.x = (x + 200) / 20
         speed.y = (y + 200) / 20
 
@@ -52,11 +53,13 @@ def move():
         targets.append(target)
 
     # Move the existing targets
+    #Here you can modify the speed of the targets
     for target in targets:
         target.x -= 10
 
     # Move the cannon shot
     if inside(ball):
+        #Here you can modify the spped at which the proyectile falls
         speed.y -= 0.35
         ball.move(speed)
 
@@ -74,6 +77,7 @@ def move():
     # Detect when a target reaches the left side
     for target in targets:
         if not inside(target):
+            #when it reaches, teleport the target to its original position
             target.x = 200
             
 

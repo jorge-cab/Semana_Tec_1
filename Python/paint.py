@@ -39,10 +39,13 @@ def circle(start, end):
     goto(start.x, start.y)
     down()
     begin_fill()
+
     for count in range(180):
-    	forward(end.x - start.x)
-	left(1)
+        forward(end.x - start.x)
+        left(2)
+
     end_fill()
+
 
 
 def rectangle(start, end):

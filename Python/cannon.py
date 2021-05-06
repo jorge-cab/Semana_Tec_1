@@ -53,7 +53,7 @@ def move():
 
     # Move the existing targets
     for target in targets:
-        target.x -= 1
+        target.x -= 10
 
     # Move the cannon shot
     if inside(ball):
@@ -74,8 +74,8 @@ def move():
     # Detect when a target reaches the left side
     for target in targets:
         if not inside(target):
-            #targets.remove(target)
-            return
+            target.x = 200
+            
 
     ontimer(move, 50)
 

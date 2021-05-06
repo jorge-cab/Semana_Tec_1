@@ -39,7 +39,7 @@ def circle(start, end):
     goto(start.x, start.y)
     down()
     begin_fill()
-
+# Repite 180 veces un giro de 2 grados para completar los 360 del circulo
     for count in range(180):
         forward(end.x - start.x)
         left(2)
@@ -53,7 +53,7 @@ def rectangle(start, end):
     goto(start.x, start.y)
     down()
     begin_fill()
-
+# Repite 2 veces media figura y finalmente se unen
     for count in range(2):
         forward(end.x - start.x)
         left(90)
@@ -68,7 +68,7 @@ def triangle(start, end):
     goto(start.x, start.y)
     down()
     begin_fill()
-
+# Repite 3 veces una linea con un giro de 120 grados para completar el triangnulo
     for count in range(3):
         forward(end.x - start.x)
         left(120)

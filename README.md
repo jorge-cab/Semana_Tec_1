@@ -1,2 +1,8 @@
 # Semana_Tec_1
-Test Repository
+
+Jorge Becker
+Androes Gomez
+Jorge Cabiedes
+Mikel Barrutieta
+
+Repositorio realizado para la Semana TEC de el arte de la programación

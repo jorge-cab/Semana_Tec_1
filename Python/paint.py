@@ -53,7 +53,7 @@ def rectangle(start, end):
     goto(start.x, start.y)
     down()
     begin_fill()
-# Repite 2 veces el dibujo de media figura y finalmente se unen
+# Repite 2 veces el dibujo  de media figura y finalmente se unen
     for count in range(2):
         forward(end.x - start.x)
         left(90)

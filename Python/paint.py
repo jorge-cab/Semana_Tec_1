@@ -103,6 +103,7 @@ onkey(lambda: color('green'), 'G')
 onkey(lambda: color('blue'), 'B')
 onkey(lambda: color('red'), 'R')
 onkey(lambda: color('yellow'), 'Y')
+#Nuevo color
 onkey(lambda: color('lime'), 'L')
 onkey(lambda: color('cyan'), 'C')
 onkey(lambda: store('shape', line), 'l')

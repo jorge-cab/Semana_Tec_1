@@ -13,6 +13,8 @@ from random import randrange
 from turtle import *
 from freegames import vector
 
+state = {'score': 0}
+writer = Turtle(visible=False)
 ball = vector(-200, -200)
 speed = vector(0, 0)
 targets = []
@@ -32,7 +34,11 @@ def inside(xy):
 
 def draw():
     "Draw ball and targets."
+    writer.undo()
+    writer.write(state['score'])
     clear()
+
+    
 
     for target in targets:
         goto(target.x, target.y)
@@ -71,6 +77,8 @@ def move():
     for target in dupe:
         if abs(target - ball) > 13:
             targets.append(target)
+        else:
+            state['score'] += 1
 
     draw()
 
@@ -86,6 +94,11 @@ def move():
 setup(420, 420, 370, 0)
 hideturtle()
 up()
+writer.up()
+writer.goto(160, 160)
+writer.down()
+writer.color('black')
+writer.write(state['score'])
 tracer(False)
 onscreenclick(tap)
 move()

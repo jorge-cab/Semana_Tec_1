@@ -2,7 +2,7 @@
 
 Jorge Becker
 
-Androes Gomez
+Andros Gomez
 
 Jorge Cabiedes
 

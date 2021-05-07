@@ -23,8 +23,8 @@ def tap(x, y):
         ball.x = -199
         ball.y = -199
         #Here you can modify the speed of the proyectile
-        speed.x = (x + 200) / 20
-        speed.y = (y + 200) / 20
+        speed.x = (x + 200) / 15
+        speed.y = (y + 200) / 15
 
 def inside(xy):
     "Return True if xy within screen."
@@ -55,7 +55,7 @@ def move():
     # Move the existing targets
     #Here you can modify the speed of the targets
     for target in targets:
-        target.x -= 10
+        target.x -= 12
 
     # Move the cannon shot
     if inside(ball):
